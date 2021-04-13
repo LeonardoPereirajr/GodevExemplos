@@ -35,13 +35,12 @@ public class descontosteste {
 		double valorDiferencaSalario = outrosDescontos.valorHorasExtras(10.00, 8, 0.50);
 		assertEquals(valorDiferencaSalario,120,0);
 	}
-
-	/*
-	 * public static double valorHorasExtras(double valorHora, double quantidadeHrsExtras, double fator) {
-		double valorHrsExtras = quantidadeHrsExtras * valorHora;
-		valorDiferencaSalario = valorHrsExtras + (valorHrsExtras * fator);
-		return valorDiferencaSalario;
-	}
-	 */
 	
+	@Test
+	public void test6() {
+		double valorSalarioInicial = outrosDescontos.calculaHorasTrabalhadas(40, 10);
+		assertEquals(valorSalarioInicial,400,0);
+	}
+
+
 }

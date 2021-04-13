@@ -2,8 +2,7 @@ package descontos;
 
 /**
  * 
- * @author SENIOR
- *
+ * @author SENIOR Declaração de variaveis
  */
 public class descontosFolha {
 	static double valorSalarioBruto = 3000.00;
@@ -28,7 +27,6 @@ public class descontosFolha {
 	 * @param percentualInss
 	 * @return calculaInss
 	 */
-
 	static double descontoInss(double percentualInss, double valorSalarioBruto) {
 		double calculaInss = valorSalarioBruto * percentualInss;
 		System.out.println("O valor do desconto de Inss sera : R$ " + calculaInss);
