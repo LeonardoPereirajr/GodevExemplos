@@ -2,7 +2,7 @@ package descontos;
 
 /**
  * 
- * @author SENIOR Declaração de variaveis
+ * @author LEO Declaração de variaveis
  */
 public class descontosFolha {
 	static double valorSalarioBruto = 3000.00;
@@ -22,7 +22,7 @@ public class descontosFolha {
 
 	/**
 	 * Chamada do metodo que calcula o desconto de INSS verificando o salario Bruto
-	 * aplicando o percentual de 0.11%
+	 * aplicando o percentual de 11%
 	 * 
 	 * @param percentualInss
 	 * @return calculaInss
@@ -37,7 +37,7 @@ public class descontosFolha {
 	/**
 	 * Chamada do metodo de Vale transporte que calcula o desconto, se o percentual
 	 * aplicado de 0.06% for maior que R$ 180,00 o desconto será este, se for menor
-	 * retorna este valor calculado.
+	 * retorna este valor calculado que é a multiplicação do Bruto com o 6%.
 	 * 
 	 * @param valetransporte
 	 * @return valetransporte

@@ -51,13 +51,15 @@ public class outrosDescontos {
 	}
 
 	/**
-	 * Retorna o valor da folha total do colaborador
-	 * A partir da identificação do colaborador (colabId), calcula-se o valor da hora com insalubridade que 
-	 * é o resultado das informações do valor hora, quantidade de horas e o percentual de insalubridade.
-	 * O valor do salario Bruto será o calculo das horas trabalhadas com e sem insalubridade.
-	 * É possivel adicionar horas extras e bonificação.
-	 * A variavel "salarioDescontos" recebe o calculo das faltas (em horas), o desconto do plano de saude
-	 * o imposto de renda, INSS e o Vale transporte.
+	 * Retorna o valor da folha total do colaborador A partir da identificação do
+	 * colaborador (colabId), calcula-se o valor da hora com insalubridade que é o
+	 * resultado das informações do valor hora, quantidade de horas e o percentual
+	 * de insalubridade. O valor do salario Bruto será o calculo das horas
+	 * trabalhadas com e sem insalubridade. É possivel adicionar horas extras e
+	 * bonificação. A variavel "salarioDescontos" recebe o calculo das faltas (em
+	 * horas), o desconto do plano de saude o imposto de renda, INSS e o Vale
+	 * transporte.
+	 * 
 	 * @param colabId
 	 * @return salarioFinal
 	 */
@@ -73,14 +75,14 @@ public class outrosDescontos {
 		double salarioFinal = valorSalarioBruto - salarioDescontos;
 		return salarioFinal;
 	}
-	
+
 	/**
-	 * Método para "imprimir" a folha do colaborador
-	 * Metodo ira imprimir as seguintes informações:
-	 * Cadastro com Id do colaborador e seu nome;
-	 * Valor Bruto com horas extras discriminadas e bonificações
-	 * Total dos Descontos discriminados são o valor das horas falta, plano de saude, INSS, IR;
-	 * Ao final trará discriminado o valor liquido que é o resultado da variáve salarioFinal
+	 * Método para "imprimir" a folha do colaborador Metodo ira imprimir as
+	 * seguintes informações: Cadastro com Id do colaborador e seu nome; Valor Bruto
+	 * com horas extras discriminadas e bonificações Total dos Descontos
+	 * discriminados são o valor das horas falta, plano de saude, INSS, IR; Ao final
+	 * trará discriminado o valor liquido que é o resultado da variáve salarioFinal
+	 * 
 	 * @param colabId
 	 */
 	public static void imprimeFolha(int colabId) {
@@ -112,11 +114,11 @@ public class outrosDescontos {
 		System.out.println("Valor líquido: R$ " + salarioFinal);
 	}
 
-	
 	/**
-	 * Metodo para Calcular insalubridade
-	 * Este metodo recebera diferentes percentuais( 10%, 20% ou 40%) de insalubridade para ao final retornar 
-	 * o valor com base na multiplicação pelo Salario Minimo
+	 * Metodo para Calcular insalubridade Este metodo recebera diferentes
+	 * percentuais( 10%, 20% ou 40%) de insalubridade para ao final retornar o valor
+	 * com base na multiplicação pelo Salario Minimo
+	 * 
 	 * @param percentual
 	 * @return
 	 */
@@ -135,7 +137,6 @@ public class outrosDescontos {
 		return valorInsalubridade;
 	}
 
-	
 	/**
 	 * Metodo para Calcular horas trabalhadas
 	 * 
@@ -148,15 +149,15 @@ public class outrosDescontos {
 		return valorSalarioInicial;
 	}
 
- 
 	/**
-	 * Metodo que Calcula o valor "bruto" do salário (quantidades horas trabalhadas * valor
-	 * hora) MAIS valor de insalubridade.
-	 * O metodo receber o valor hora, a quantidade de horas trabalhadas e o percentual de insalubridade.
-	 * Se o valor da insalubridade for maior que zero o valor com insalubridade sera o resultado da divisão
-	 * do valor da insalubridade divido pela quantidade de horas trabalhadas somado ao valor hora.
-	 * Se o valor da insalubridade for igual a zero o salario inicial sera a multiplicação do valor hora pela
-	 * quantidade de horas trabalhadas.
+	 * Metodo que Calcula o valor "bruto" do salário (quantidades horas trabalhadas
+	 * * valor hora) MAIS valor de insalubridade. O metodo receber o valor hora, a
+	 * quantidade de horas trabalhadas e o percentual de insalubridade. Se o valor
+	 * da insalubridade for maior que zero o valor com insalubridade sera o
+	 * resultado da divisão do valor da insalubridade divido pela quantidade de
+	 * horas trabalhadas somado ao valor hora. Se o valor da insalubridade for igual
+	 * a zero o salario inicial sera a multiplicação do valor hora pela quantidade
+	 * de horas trabalhadas.
 	 * 
 	 * @param valorHora
 	 * @param quantidadeHorasTrabalhadas
